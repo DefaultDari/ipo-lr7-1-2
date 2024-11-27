@@ -14,8 +14,8 @@ print("\n=============== Результат поиска ===============")
 for item in data:
     # Проверяем, соответствует ли элемент определённым условиям:
     # 1. Ключ 'model' имеет значение 'data.skill'.
-    # 2. Поле 'fields' содержит значение для указанного пользователем ключа `numb`.
-    if item['model'] == 'data.skill' and item['fields'][numb]:
+    # 2. Поле 'fields' содержит значение для указанного пользователем ключа `code`.
+    if item['model'] == 'data.skill' and item['fields']['code'].startswith(numb): # startswith проверяет, начинается ли строка на указанную подстроку
         # Если условия выполнены, выводим код и название квалификации.
         print(f"{item['fields']['code']} >> {item['fields']['title']}")
         found = True  # Устанавливаем флаг `found` в True (результат найден).
