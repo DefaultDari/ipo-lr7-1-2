@@ -2,7 +2,7 @@
 
 - Считывает данные из следующего файла:
     
-    [dump.json](https://prod-files-secure.s3.us-west-2.amazonaws.com/d9fc6719-e1f9-49a0-8e26-8e1860bb2010/8f214591-daa1-4f01-bf60-268bc1832b5f/dump.json)
+    [dump.json]([https://prod-files-secure.s3.us-west-2.amazonaws.com/d9fc6719-e1f9-49a0-8e26-8e1860bb2010/8f214591-daa1-4f01-bf60-268bc1832b5f/dump.json](https://file.notion.so/f/f/d9fc6719-e1f9-49a0-8e26-8e1860bb2010/8f214591-daa1-4f01-bf60-268bc1832b5f/dump.json?table=block&id=1269f5fa-a7fd-8039-87d7-eb775b8e784e&spaceId=d9fc6719-e1f9-49a0-8e26-8e1860bb2010&expirationTimestamp=1732816800000&signature=RZzx2TypEbr2sLtkecquX-oZvHVS-JA6kHM9c41U9o8&downloadName=dump.json))
     
 - Пользователь вводит номер квалификации (строка) и выводит найденую квалификацию в следующем виде:
     
