@@ -1,16 +1,25 @@
-import json
+import json  # Импортируем модуль для работы с JSON файлами.
 
-with open('dump.json', 'r', encoding='utf-8') as file:
-    data = json.load(file)
+# Открываем файл dump.json в режиме чтения с кодировкой UTF-8.
+file = open('dump.json', 'r', encoding='utf-8')
+data = json.load(file)  # Загружаем содержимое JSON файла в переменную `data`.
 
-
+# Запрашиваем у пользователя ввод номера квалификации.
 numb = input("Введите номер квалификации: ")
 
+# Выводим заголовок для результата поиска.
 print("\n=============== Результат поиска ===============")
-for item in data:
-    if item['model'] == 'data.skill' and item['fields'][numb]:
-        print(f"{item['fields']['code']} >> {item['fields']['title']}")
-        found = True
 
+# Перебираем все элементы в загруженных данных (предположительно список словарей).
+for item in data:
+    # Проверяем, соответствует ли элемент определённым условиям:
+    # 1. Ключ 'model' имеет значение 'data.skill'.
+    # 2. Поле 'fields' содержит значение для указанного пользователем ключа `numb`.
+    if item['model'] == 'data.skill' and item['fields'][numb]:
+        # Если условия выполнены, выводим код и название квалификации.
+        print(f"{item['fields']['code']} >> {item['fields']['title']}")
+        found = True  # Устанавливаем флаг `found` в True (результат найден).
+
+# Если ни одного подходящего результата не найдено, выводим соответствующее сообщение.
 if not found:
     print("============== Не найдено ===============")
